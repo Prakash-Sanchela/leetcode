@@ -4,7 +4,10 @@ public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
         if (head == NULL)
             return NULL;
-
+        // will use two pointers, fast will move n times
+        // since fast moved n times then will move fast and slow 
+        // pointers, once fast->next == NULL, update the slow with
+        // slow->next->next.
         ListNode *fast = head, *slow = head;
         while(n--) 
         {
