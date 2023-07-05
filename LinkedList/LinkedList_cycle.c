@@ -16,4 +16,11 @@ public:
         }
         return false;
     }
+/*
+Another solution could be to use the hash_map.
+1. use unordered_map;
+2. insert one by one node starting from head node and make it's value as 1
+3. if list has look there will be a point where before inserting into map
+   if we find the node and value with 1 it means it has a loop at that node
+*/
 };
