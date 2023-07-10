@@ -1,4 +1,15 @@
 class Solution {
+private:
+void reverse(ListNode* &head, ListNode* curr, ListNode* prev)
+{
+	if (curr == NULL)
+	{
+		head = prev;
+		return;
+	}
+	reverse(head, curr->next, prev);
+	curr->next = prev;
+}
 public:
     ListNode* reverseList(ListNode* head) {
         if (head == NULL)
@@ -39,5 +50,12 @@ public:
             stack_s.pop();
         }
         return temp1->next;*/
+	/*
+ 	//sol-3 : recursive approach
+  	ListNode* prev = NULL;
+        ListNode* curr = head;
+        reverse(head, curr, prev);
+        return head;
+ 	*/
      }
 };
