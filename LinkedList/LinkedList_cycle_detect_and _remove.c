@@ -7,12 +7,20 @@ public:
         ListNode *slow = head;
         ListNode *fast = head;
 
-        while(fast != NULL && fast->next != NULL)
+        while(slow != NULL && fast != NULL)
         {
+            fast = fast->next;
+            if (fast != NULL)
+                fast = fast->next;
+            
             slow = slow->next;
-            fast = fast->next->next;
             if(slow == fast)
                 return true;
+            /*
+            logic to remove cycle
+            if(slow == fast)
+                return true;
+            */
         }
         return false;
     }
