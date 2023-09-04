@@ -1,0 +1,24 @@
+// IBM - 04/09/2023
+
+1. Brief about introduction
+2. Inheritance and abstraction 
+3. Why C++ is better in which case and when C is better in which case?
+4. Stack and heap is upgrowing or downgrowing, how do we check, is there any standard procedure. 
+5. staic library vs dynamic library
+    - fundamental difference 
+    - how dynamic library is shared among two processes
+    - when to use static library and dynamic library
+6. -fpic argument linux
+7. Core dump vs memory leak. 
+    - any situation where you've come through this memory leak issue. 
+8. If your linux machine is running slow, what steps you follow. 
+    - check which process is taking more cpu
+    - check exact command to check process and cpu resources
+9. docker commands used. 
+    - if there's 10 docker container you have. 
+      if you want to keep 4 docker isolated, how will you do that? Hint - cgroups
+10. gdb commands you've used.
+
+##Coding.
+1. Best time to buy and sell the stock to get maximum profit
+2. Merge sort. 
