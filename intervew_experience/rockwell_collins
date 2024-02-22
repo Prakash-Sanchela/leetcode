@@ -1,0 +1,30 @@
+	1. 1st round was telephonic. Cracked
+	2. Face to face round at their office
+	3. Second technical
+		a. C++ vs VC++
+		b. What is VC++ and .NET framework
+		c. What are the features in .NET framework which is not in C++
+		d. Pointer vs reference
+		e. How you deal with dynamic allocation of memory. How you check memory leak
+		f. Any appreciation from your manager?
+		g. Difference between capacity and size in vector.
+		h. What if I insert one more data into vector more than its capacity
+		
+	4. Third technical
+		a. Write an algorithm which you have used in your development
+		b. Do you know containers?
+		c. Write a program to take an input from the user and insert into vector again take an input from the 
+		User and find that from vector. Function should return that index and if not found we should print 
+		No data found
+		d. WAP to implement a queue. Push Pop function
+		e. WAP to read from the .CSV file having ID with some parameters. Should put into the container and I can access that data according to that ID.
+	5. Forth technical and behavioral.
+		a. Anytime conflicts happened with your team mates anytime about your implementation.
+		b. What is your long term goal
+		c. What you want to learn now after your 3.5 year of experience
+		d. Any appreciation from your higher management.
+		e. What us your daily routine?
+		f. Let's say if conflicts happen with other guy about your implement6ation and he says he is right and you say you are right, then in that case what you'll do.
+		g. Why you want to join Rockwell?
+		h. What is your style of working?
+Describe code refactoring in some lines
