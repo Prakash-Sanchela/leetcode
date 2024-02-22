@@ -1,0 +1,10 @@
+	Reverse linked list
+	Using stack
+	Strtok, tokenize the string
+	Implement a map in which key as string and value as function pointer which holds callbacks. Based on input string that perticular function should get fired
+	OnInit() it should register the callback with actual functions.
+	Atoi()
+		4123
+		num = 0;
+		num = 4, 41, 412, 4123
+		num = num * 10 +(str[i] - 48)
