@@ -1,0 +1,49 @@
+Have you used sockets ?
+	What type of SOCKET it was
+	Secured or unsecured sockets
+	Which windows sockets you have used?
+	How you achieved your communication in your project
+	Have you used the web sockets
+Hashmap
+Hashmap vs normal map
+What are different hash algorithm 
+Have you write any data structure or algorithm?
+What data structure you have used.
+What is Encryption? 
+	Encryption type and how it's been done
+	Encryption vs Encoding 
+Scheduling in RTOS and windows
+	What specific scheduling mechanism used in windows 
+Compiler steps
+	Pre-processor
+	Translator
+	Assembly
+	Linker
+Undefined and undeclared when error comes
+What is portable application
+	Have you write any portable application
+	How do you write a portable application
+Specific features of C++14
+Unique_ptr
+Thread vs Process
+How to communicate between two processes 
+	IPC
+What is data integrity in terms of data communication
+Stack 
+	Explain each segment 
+	Data segment 
+	Code segment
+	Where all types of variable get's stored
+		Stack segment
+			Local variables
+			Function return address
+			Formal arguments
+		Data segment
+			Static and global variables
+		Code segment 
+			Opcode
+		Heap (Extendable)
+			DMA 
+Storage classes
+Scope vs lifetime
+How you can write a portable application that can run on linux, windows and mac OS?
