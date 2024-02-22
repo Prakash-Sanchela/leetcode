@@ -1,0 +1,20 @@
+How dpdk imporves the performace
+how your data flows using DPDK
+in dpdk what are the criteria for poll-mode drivers
+how frequently poll-mode drivers checkes on the ring buffer, what's the speed of picking up packet per second.
+tree program  
+time complexity calculation
+Have you used multithreading 
+are you using any posix threads?
+how are you synchronizing the threads while sharing the data.
+what mutex APIs are you using for synchronizing.
+do you know any other data plane other then ovs and dpdk?
+Tell me something about L3 packet processing 
+which networking layer you're familier with (tell me about L3 packet processing)
+endians apis
+how to identify endians 
+Race conditions
+What is your project architecture.
+are you using any microservices.
+if your modules running as services how they're communicating. 
+convert 0x27 to 0x27272727 (hint using bitwise operators)
