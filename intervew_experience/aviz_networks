@@ -1,22 +1,22 @@
-	Pointer questions
-	Find sub string
-	Why there's no find() function in vector
-		Find needs to compare, to compare class needs to have comparator. 
-		So ideally with respect to vector, searching complexity is O(1) using indexing, still if you want to search user has to iterate over the vector and compare one by one. 
-		Find won't work with vector is because type of vector can't have comparator operator overloaded. 
+Pointer questions
+Find sub string
+Why there's no find() function in vector
+	Find needs to compare, to compare class needs to have comparator. 
+	So ideally with respect to vector, searching complexity is O(1) using indexing, still if you want to search user has to iterate over the vector and compare one by one. 
+	Find won't work with vector is because type of vector can't have comparator operator overloaded. 
 		
-	Container with most water
-	Destination Lookup Failure
-	IF Asic can handle 400 gigs of traffic and CPU is 1 gigs of traffic. 
+Container with most water
+Destination Lookup Failure
+IF Asic can handle 400 gigs of traffic and CPU is 1 gigs of traffic. 
 	What happen, is this scenario is valid?
 	What will happen to the packet
-	DLF - Destination Lookup Failure.
-	
-	IF you have 4K of memory and two threads one is writing and one is reading. 
-	How can you make synchronization without any kind of locking mechanism as lock will affect the performance. Both threads should do continue writing and reading but with synchronization. 
-	What data structure you'll use when you have lacks of data to maintain in C language. 
+DLF - Destination Lookup Failure.
+IF you have 4K of memory and two threads one is writing and one is reading. 
+How can you make synchronization without any kind of locking mechanism as lock will affect the performance. Both threads should do continue writing and reading but with synchronization. 
+What data structure you'll use when you have lacks of data to maintain in C language. 
+filter incoming websites on http layer
 
-Second round
-	Introduction
-	How packets are coming and going from PPE?
+#Second round
+Introduction
+How packets are coming and going from PPE?
 What kind of Architecture was of PPE?
