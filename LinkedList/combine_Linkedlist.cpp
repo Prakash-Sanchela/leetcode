@@ -1,3 +1,4 @@
+//https://leetcode.com/discuss/study-guide/1800120/become-master-in-linked-list
 /*Description
 One of the basic structures in algorithm which can be used to achieve lots of funny algorithms and problems.
 
