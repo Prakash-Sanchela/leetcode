@@ -1,5 +1,29 @@
 class Solution {
 public:
+    void loop_detection_deletion(node * head)
+{
+    // Floyd Loop Detection Algorithm
+    node * slow = head, * fast = head;
+    while (fast != NULL && fast -> next != NULL) {
+        slow = slow -> next;
+        fast = fast -> next -> next;
+        if (slow == fast) 
+            break; // first meeting point
+    }
+    if (slow != fast) 
+        return;
+    // Loop Removal Algorithm
+    slow = head;
+ 
+    // locating the starting node of the loop
+      while (slow -> next != fast -> next) 
+      {
+        slow = slow -> next;
+        fast = fast -> next;
+      }
+  // terminating the loop
+  fast -> next = NULL;
+}
     bool hasCycle(ListNode *head) {
         if (head == NULL)
             return false;
