@@ -23,6 +23,7 @@ How packet processing speed is being increased using DPDK
   - how packet is being treated starting from NIc, kernel layer and application layer in case of DPDK
   - check concept called zero copy
   - check linux kernel network stack packet processing and compared with DPDK packet processing
+  - what are other packet processing mechanism available in market similar to DPDK
 
 =====================PYTHON============================
 Is multiprocessing is possible in python
