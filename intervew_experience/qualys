@@ -1,0 +1,36 @@
+======================NETWORKING==============================
+For in active-standby architecture seamless traffic is achieved, let's say dut1 is active and dut2 is passive, all the tcp connections 3 way handshaking is being done with dut1, if it goes down how this configuration is being copied to dut2 so that no traffic loss observed.
+STP, TSTP protocol
+DHCP protocol
+  - Where DHCP server is running
+  - How IP is assigned to client
+  - What other things is being done by DHCP server apart from assigning IP.
+How DNS is getting resolved
+  - if we does facebook.com how this DNS resolves. 
+  - what if google dns server 8.8.8.8 also not able to resolve the DNS
+  - read all about DNS serve
+  - if multiple dns server is mentioned in /etc/resolv.conf file, how it will resolve.
+  - what is primary dns secondary dns
+
+======================UEFI=============================
+What advantage UEFI provides.
+  - what disadvantage of legacy BIOS is overcome by UEFI
+  - what is secure boot, what security is provided by secure boot and how? why do we need security at boot level.
+
+======================DPDK=============================
+How packet processing speed is being increased using DPDK
+  - what mechanism internally it uses.
+  - how packet is being treated starting from NIc, kernel layer and application layer in case of DPDK
+  - check concept called zero copy
+  - check linux kernel network stack packet processing and compared with DPDK packet processing
+
+=====================PYTHON============================
+Is multiprocessing is possible in python
+  - if we use subprocess.run doesn't it multi process while one process already running and creating subprocess
+  - while creating subprocess check ps -ef
+  - check basic fundamentals of python -> GIL concept
+
+=====================C=================================
+How stack unwinding is being done?
+  - When using c functions is being called and in functions there are many variables and stuffs is being allocated, how stack keep track of it or how C is keeping track of it. 
+in C can we use environment variable programatically?
