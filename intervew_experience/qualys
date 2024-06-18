@@ -1,5 +1,9 @@
 ======================NETWORKING==============================
 For in active-standby architecture seamless traffic is achieved, let's say dut1 is active and dut2 is passive, all the tcp connections 3 way handshaking is being done with dut1, if it goes down how this configuration is being copied to dut2 so that no traffic loss observed.
+  - how failover handled.
+  - if i ARP to vip what MAC it will return
+  - Read all the protocols used in HA system
+  - Read interview question on High Availibility
 STP, TSTP protocol
 DHCP protocol
   - Where DHCP server is running
