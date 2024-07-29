@@ -1,0 +1,18 @@
+1. two sum (Leetcode 1)
+	- Hash table for efficient lookup
+2. Best time to buy and sell stock(leetcode 121) 
+	- Track minimum proce and max profit
+3. Product of Array except self(238)
+	- Left and right product arrays
+4. Maximum subarray (53)
+	- Kadane's algo
+5. Find minumum in rotated sorted array (153)
+	- modified binary search
+6. search in rotated sorted array (33)
+	- two-pass binary search
+7. subarray sum equals K (560)
+	- cummulative sum with hash map
+8. merge sorted array (88)
+	- start from end, compare and place
+9. find all number disappeared in an array (448)
+	- in place array manupulation
