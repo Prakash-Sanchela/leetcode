@@ -16,3 +16,4 @@ merge sorted array (88)
 	- start from end, compare and place
 find all number disappeared in an array (448)
 	- in place array manupulation
+Metge 2 sorted array
