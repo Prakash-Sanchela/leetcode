@@ -4,6 +4,31 @@
 #include <vector>
 #include <string>
 
+struct NeighborEntry{
+	IpAddress           ip_address;     // neighbor IP address
+    string              alias;          // incoming interface alias
+    uint32_t            vni;            // Encap VNI overlay nexthop
+    MacAddress          mac_address;    // Overlay Nexthop MAC.
+    LabelStack          label_stack;    // MPLS label stack
+    uint32_t            weight;         // NH weight for NHGs
+    string              srv6_segment;   // SRV6 segment string
+    string              srv6_source;    // SRV6 source address
+	sai_common_api_t    api;
+	// this has Getter and setter functions 
+	// Also it has overloaded comparator, ==, != operator to compare the objects 
+}
+ckass MACAddress{
+private:
+	uint8_t m_mac[6]; // 6 is 6 byte
+public:
+	//Getter setter also overloaded operator 
+};
+struct NeighborUpdate
+{
+    NeighborEntry entry;
+    MacAddress mac;
+    bool add;
+};	
 enum SubjectType
 {
     SUBJECT_TYPE_NEXTHOP_CHANGE,
@@ -28,8 +53,8 @@ enum SubjectType
 // Observer interface
 class IObserver {
 public:
-    virtual void update(const std::string& message) = 0;
-  //virtual void update(SubjectType, void*) = 0;
+  virtual void update(const std::string& message) = 0;
+  virtual void update(SubjectType, void*) = 0;
 };
 
 // Subject (Orchagent) interface
@@ -37,8 +62,8 @@ class Orchagent {
 public:
     virtual void attach(IObserver* observer) = 0;
     virtual void detach(IObserver* observer) = 0;
-    virtual void notifyObservers(const std::string& message) = 0;
-    virtual void processUpdate(const std::string& update) = 0;
+    virtual void notifyObservers(SubjectType type, void *ctx) = 0;
+    virtual void processUpdate(SubjectType type, void *ctx) = 0;
     virtual void update(SubjectType, void *ctx) = 0;
     virtual ~Orchagent() = default;
 };
@@ -57,15 +82,15 @@ public:
         observers.erase(std::remove(observers.begin(), observers.end(), observer), observers.end());
     }
 
-    void notifyObservers(const std::string& message) override {
+    void notifyObservers(SubjectType type, void *ctx) override {
         for (auto& observer : observers) {
-            observer->update(message);
+            observer->update(SubjectType type, void *ctx);
         }
     }
 
-    void processUpdate(const std::string& update) override {
+    void processUpdate(SubjectType type, void *ctx) override {
         std::cout << "RouteOrch: Processing route update: " << update << std::endl;
-        notifyObservers("RouteOrch: Route update processed");
+        notifyObservers(SubjectType type, void *ctx);
     }
 };
 
@@ -109,25 +134,72 @@ public:
         observers.erase(std::remove(observers.begin(), observers.end(), observer), observers.end());
     }
 
-    void notifyObservers(const std::string& message) override {
+    void notifyObservers(SubjectType type, void *ctx) override {
         for (auto& observer : observers) {
-            observer->update(message);
+            observer->update(SubjectType type, void *ctx);
         }
     }
 
-    void processUpdate(const std::string& update) override {
+    /*void processUpdate(SubjectType type, void *ctx) override {
         std::cout << "NeighOrch: Processing neighbor update: " << update << std::endl;
-        notifyObservers("NeighOrch: Neighbor update processed");
+        notifyObservers(SubjectType type, void *ctx);
+    }*/
+    void addNeighbor(NeighborContext& ctx)
+    {
+        NeighborUpdate update = { neighborEntry, macAddress, true };
+        notifyObservers(SUBJECT_TYPE_NEIGH_CHANGE, static_cast<void *>(&update));
+    }
+    void removeNeighbor(NeighborContext& ctx)
+    {
+        
     }
 };
 
 // Concrete Observer: Syncd
 class Syncd : public IObserver {
 public:
-    void update(const std::string& message) override {
+    void update(SubjectType type, void *ctx) override {
         std::cout << "Syncd received update: " << message << std::endl;
+        switch (type)
+        {
+            case SUBJECT_TYPE_FDB_CHANGE:
+                status = handle_fdb(str_object_id, api, attr_count, attr_list);
+                break;
+            case SUBJECT_TYPE_NEIGH_CHANGE:
+                status = handle_neighbor(type, ctx);
+                break;
+            case SUBJECT_TYPE_ROUTE_CHANGE:
+                status = handle_route(str_object_id, api, attr_count, attr_list);
+                break;
+        }
     }
 };
+sai_status_t syncd::handle_neighbor(SubjectType type, void *ctx)
+{
+	neighborEntry *neighEntry = static_cast<neighborEntry*>(ctx);
+	attr_list = neighEntry->getAttr();
+	sai_neighbor_entry_api = upNeighEntry->getApi();
+	
+	switch (api)
+    {
+        case SAI_COMMON_API_CREATE:
+            return m_sai->create(&neighEntry, attr_list);
+			return m_sai->create_neighbor_entr(&neighEntry);
+
+        case SAI_COMMON_API_REMOVE:
+            return m_sai->remove(&neighEntry);
+
+        case SAI_COMMON_API_SET:
+            return m_sai->set(&neighEntry, attr_list);
+        default:
+            SWSS_LOG_THROW("no other neighbor apis implemented");
+    }
+}
+
+SAI_COMMON_API_CREATE
+SAI_COMMON_API_REMOVE
+SAI_COMMON_API_GET
+SAI_COMMON_API_SET
 
 // Application code demonstrating APPL_DB updates
 int main() {
