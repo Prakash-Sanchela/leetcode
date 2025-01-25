@@ -17,3 +17,4 @@ class Pune
 from main, call update_counter using thread;
 
 Insert the 10 element in vector, now remove the even element from vector
+why the size of empty class is one byte?
