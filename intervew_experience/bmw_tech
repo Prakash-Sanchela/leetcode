@@ -1,0 +1,19 @@
+Write a 10 line code
+Copy constroctor and assignmenet operator
+if both code are same then we are violating the oops pronciple of not to reuse the code.
+Why did you used raw pointer where you can use std::string and arrays
+Check operations or write a comlete class with string 
+class Pune
+{
+  private:
+    int counter;
+  public:
+    void update_counter()
+    {
+      count++
+    }
+};
+
+from main, call update_counter using thread;
+
+Insert the 10 element in vector, now remove the even element from vector
