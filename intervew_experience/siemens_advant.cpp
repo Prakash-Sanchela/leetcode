@@ -38,6 +38,7 @@ Do you know cryptography?
 
 ##linux
 Command to search the string in specific directory
+linux boot up sequence
 Let's say you have a USB and linux machine only, how will you copy the file from USB to linux machine
     - mount/unmount
 What is namespace and what can we achieve using namespace
