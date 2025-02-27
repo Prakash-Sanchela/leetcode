@@ -1,4 +1,24 @@
 introduction
+Introduction:
+Let's say you've given a project what will you choose, C or C++
+Let's say you've a data structure having multiple pointers in structure, how will you use smart_pointers and how will you achieve 
+memory management there.
+What is abstraction and encapsulation, why it is like that?
+If we use polymorphism why are we creating concreate classes and use only base class pointer, what are the advantages. 
+
+What exact networking protocol did you worked
+Explain how https communication happens starting from application layer to Data link layer at one and and other end how it receives?
+
+let's say you want to select the log files based on some time stamp and copy into another folder, how to do that
+
+What does git add do?
+git fetch vs git pull?
+git rebase vs git merge
+SQL basics
+
+If two people are working on feature branch, how will you make sure you're changes doesn't conflict?
+
+create a single linked list in sorted order. 
 What was the topology
 global data or lan
 which metworking layer you worked
