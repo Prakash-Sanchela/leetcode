@@ -1,0 +1,30 @@
+Round 1
+Is it possible to use smart pointers on socket or FILE pointers? - Yes with additonal deleters
+Is it possible to create class object using malloc?
+  - Yes, however malloc only allocates the memory and can not call to destructor.
+  - while new will create the memory + call the constructor to construct the object. 
+Create a class having state() function which continuesly prints the logs. 
+   - You need to start the thread when constructor get's called from main and thread should stop in destructor
+IF we use map with key as an class object type, what changes you need to make to work? - comparator operator overload
+Is same with unordered_map()?
+Vector default capacity = 1 but why?
+deque internal implementation
+What is disadvantage of vector and who overcomes it?
+vector vs dequeue
+
+
+Round 2
+1. Create a class with character pointer, create one object using new. another create another object using void pointer. 
+2. Rules of type casting in C++
+3. clipboard example, how to implement 
+
+Round 3
+1. What is your rolese and responsibilities as dev lead handson?
+2. How much amound of handson you're doing, brief about your responsibilitie.
+3. Where do you see yourself in 3 years.
+
+4. Design an application similar to spell check. 
+    - First you'll have to check if the provided word is wrong or right and highlight it. 
+    - If word is wrong your app shoudl give some 3 4 correct suggestion. 
+5. Let's say FIS company wants to organize the cricket tournament and you need to design the app, what all class and attributes you'll use. 
+
