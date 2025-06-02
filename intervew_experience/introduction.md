@@ -15,6 +15,20 @@
 - I’m now looking for a more stable environment where I can focus on a product or domain for a longer period, take ownership of critical components, and grow both technically and strategically.
 - I believe your organization offers that kind of stability and technical depth.
 
+### What is your day to day activities ###
+- In my current role, my day-to-day activities include a mix of development, debugging, and collaboration with the team.
+- I typically start by checking emails and any urgent issues or customer-reported bugs.
+- Then, I review and work on feature development or enhancements—mostly.
+- tracking Jira tasks or confluence updates is also part of my routine
+
+- I spend a significant part of my day analyzing logs(AHS), debugging issues using tools like gdb, multi in this case.
+- In past i have used GDB, tcpdump, Visual studio in networking or storage scenarios.
+- code reviews, and daily stand-ups.
+-
+- I also had exposure on python automation,used it for few months.
+
+  ### any exposure on static analysis code tool ###
+
 
 
 
