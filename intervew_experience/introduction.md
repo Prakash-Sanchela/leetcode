@@ -29,6 +29,18 @@
 
   ### any exposure on static analysis code tool ###
 
+  ### HR Interview question answere ###
+## 1. Tell me about your self
+## 2. Why are you looking for the change
+      - You should not blame your current company
+## 3. What is your notice period? Is it negoitiable?
+      - You should tell yes we can try to negotiate.
+## 4. Is your company open for buy out option?
+      - You should tell yes, will have to check
+## 5. What is your current & expected ctc?
+## 6. Rate yourself
+## 7. What are your strength & weakness?
+
 
 
 
