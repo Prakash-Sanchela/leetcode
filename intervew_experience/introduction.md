@@ -40,6 +40,22 @@
 ## 5. What is your current & expected ctc?
 ## 6. Rate yourself
 ## 7. What are your strength & weakness?
+ - Strength : Professionally well in communiating with client and my stack holder
+ -            Proactive
+ -            Adaptable (Changing form)
+ - Weakness : I tend to overcommit myself to complete pending tasks on the same day, but I'm learning to prioritize better and manage boundaries for long-term effectiveness.
+## 8. Why should we hire you?
+ - With over 10 years of diverse experience in C++ development across domains like Storage, networking, PLM and retail.
+ - I bring both technical depth and adaptability.
+ - I've contributed to critical areas performance optimization, feature implementations.
+ - I take ownership of tasks, guide juniors when needed, and over the period of this experience I continuously pick up new technologies & tools.
+ - My past show consistent delivery and dedication to product quality.
+ - I aim to be a long-term, reliable contributor who grows with the organization.
+   
+## 8. Why Siemens?
+  - Work life balance
+  - Quality work where you can learn and grow vertically.
+  - Siemens AG is a German multinational technology conglomerate. It is focused on industrial automation, building automation, rail transport and health technology.
 
 
 
